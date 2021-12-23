@@ -5,8 +5,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'airbnb/hooks',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -19,5 +19,12 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function', // 'function-declaration' | 'function-expression' | 'arrow-function'
+      },
+    ],
   },
 };
