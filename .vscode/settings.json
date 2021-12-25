@@ -1,5 +1,14 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // Emmetがjsx.tsxファイルでも実行できるように
+  // "emmet.includeLanguages": {
+  //   "typescriptreact": "css",
+  //   "javascriptreact": "css"
+  // },
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "javascriptreact", "typescriptreact"]
 }
