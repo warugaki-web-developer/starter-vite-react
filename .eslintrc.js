@@ -81,5 +81,12 @@ module.exports = {
         ],
       },
     },
+    // storybook
+    {
+      files: ['**/*.stories.*'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+      },
+    },
   ],
 };
