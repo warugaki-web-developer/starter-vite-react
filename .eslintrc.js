@@ -29,7 +29,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/vite.config.ts'],
+      files: ['**/vite.config.js'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
