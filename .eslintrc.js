@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'import',
     'unused-imports',
   ],
   rules: {
@@ -45,6 +46,35 @@ module.exports = {
       files: ['**/vite.config.js'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
+      },
+    },
+    // import/order rules setting
+    {
+      files: ['src/**/*.{js,jsx}'],
+      rules: {
+        'import/order': [
+          'error',
+          {
+            groups: [
+              'builtin', 'external', 'internal', ['parent', 'sibling'], 'index', 'object', 'type',
+            ],
+            pathGroups: [
+              // cssは 最後尾にしたいため
+              {
+                pattern: './**/**\\.css', // same directory only
+                group: 'type',
+                position: 'after',
+              },
+            ],
+            pathGroupsExcludedImportTypes: ['builtin'],
+            alphabetize: {
+              order: 'asc', // asc|desc|ignore
+              caseInsensitive: true, // 大文字と小文字を区別なくアルファベット順に
+            },
+            'newlines-between': 'always',
+            warnOnUnassignedImports: true,
+          },
+        ],
       },
     },
   ],
