@@ -4,10 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'airbnb',
-    'airbnb/hooks',
-  ],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -15,11 +12,7 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'import',
-    'unused-imports',
-  ],
+  plugins: ['react', 'import', 'unused-imports'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
@@ -56,7 +49,13 @@ module.exports = {
           'error',
           {
             groups: [
-              'builtin', 'external', 'internal', ['parent', 'sibling'], 'index', 'object', 'type',
+              'builtin',
+              'external',
+              'internal',
+              ['parent', 'sibling'],
+              'index',
+              'object',
+              'type',
             ],
             pathGroups: [
               // cssは 最後尾にしたいため
