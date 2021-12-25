@@ -4,7 +4,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'prettier',
+    'plugin:storybook/recommended',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -74,6 +79,13 @@ module.exports = {
             warnOnUnassignedImports: true,
           },
         ],
+      },
+    },
+    // storybook
+    {
+      files: ['**/*.stories.*'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
       },
     },
   ],

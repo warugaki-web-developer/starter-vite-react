@@ -10,7 +10,9 @@
     "lint:stylelint": "stylelint ./src/**/*.{css,jsx}",
     "fix:stylelint": "stylelint --fix ./src/**/*.{css,jsx}",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,json,css}'",
-    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,json,css}'"
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,json,css}'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -19,9 +21,15 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
     "@emotion/babel-plugin": "^11.7.2",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "@stylelint/postcss-css-in-js": "^0.37.2",
     "@vitejs/plugin-react": "^1.0.7",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-prettier": "^8.3.0",
@@ -29,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.5",
     "eslint-plugin-unused-imports": "^2.0.0",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.5.1",
