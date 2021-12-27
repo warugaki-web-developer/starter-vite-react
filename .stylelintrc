@@ -8,9 +8,7 @@
   "overrides": [
     {
       "files": ["**/*.jsx", "**/*.tsx"],
-      "rules": {
-        "no-empty-first-line": null
-      },
+      "rules": {},
       "customSyntax": "@stylelint/postcss-css-in-js"
     }
   ]
