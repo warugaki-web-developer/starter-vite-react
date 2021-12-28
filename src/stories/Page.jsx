@@ -81,6 +81,7 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
     </section>
   </article>
 );
+
 Page.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
@@ -89,7 +90,7 @@ Page.propTypes = {
 };
 
 Page.defaultProps = {
-  user: null,
+  user: {},
 };
 
 export default Page;

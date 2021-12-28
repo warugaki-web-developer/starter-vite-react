@@ -58,7 +58,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  user: null,
+  user: {},
 };
 
 export default Header;
