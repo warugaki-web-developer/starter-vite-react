@@ -8,7 +8,22 @@
   "overrides": [
     {
       "files": ["**/*.jsx", "**/*.tsx"],
-      "rules": {},
+      "rules": {
+        "value-keyword-case": [
+          "lower",
+          {
+            "ignoreKeywords": ["/.*/"],
+            "ignoreProperties": ["/.*/"],
+            "ignoreFunctions": ["/.*/"]
+          }
+        ],
+        "function-name-case": [
+          "lower",
+          {
+            "ignoreFunctions": ["/.*/"]
+          }
+        ]
+      },
       "customSyntax": "@stylelint/postcss-css-in-js"
     }
   ]
