@@ -65,7 +65,7 @@ module.exports = {
             pathGroups: [
               // cssは 最後尾にしたいため
               {
-                pattern: './**/**\\.css', // same directory only
+                pattern: './**/**\\.css',
                 group: 'type',
                 position: 'after',
               },
