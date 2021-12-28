@@ -7,8 +7,8 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
-    'prettier',
     'plugin:storybook/recommended',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -65,7 +65,7 @@ module.exports = {
             pathGroups: [
               // cssは 最後尾にしたいため
               {
-                pattern: './**/**\\.css', // same directory only
+                pattern: './**/**\\.css',
                 group: 'type',
                 position: 'after',
               },
