@@ -7,8 +7,8 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
-    'prettier',
     'plugin:storybook/recommended',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
