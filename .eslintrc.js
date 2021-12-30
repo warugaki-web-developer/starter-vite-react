@@ -19,6 +19,12 @@ module.exports = {
   },
   plugins: ['react', 'import', 'unused-imports'],
   rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true, // devDependenciesのimportを許可
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       'error',
@@ -40,12 +46,6 @@ module.exports = {
     ],
   },
   overrides: [
-    {
-      files: ['**/vite.config.js'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
     // import/order rules setting
     {
       files: ['src/**/*.{js,jsx}'],
