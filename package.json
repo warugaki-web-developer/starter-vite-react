@@ -1,6 +1,9 @@
 {
   "name": "starter-vite-react",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
