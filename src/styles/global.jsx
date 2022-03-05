@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import 'sanitize.css'; // reset css
 
 const globalStyle = css`
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
   body {
     margin: 0;
